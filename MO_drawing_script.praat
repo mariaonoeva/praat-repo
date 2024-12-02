@@ -32,18 +32,20 @@ Marks right every: 1, 5000, "yes", "yes", "no"
 
 # making and drawing pitch 
 # it is necessary to adjust pitch hight
+pitchVal = 800
+
 selectObject: "Sound" + " " + name$
-To Pitch (ac): 0, 75, 15, "no", 0.03, 0.45, 0.01, 0.35, 0.14, 800
+To Pitch (ac): 0, 75, 15, "no", 0.03, 0.45, 0.01, 0.35, 0.14, pitchVal
 # Uncomment interpolate, if necessary 
 # Interpolate
 White
 Line width: 10
-Draw: 0, 0, 0, 800, "no"
+Draw: 0, 0, 0, pitchVal, "no"
 Blue
 Line width: 5
-Draw: 0, 0, 0, 800, "no"
+Draw: 0, 0, 0, pitchVal, "no"
 Line width: 1
-Marks left every: 1, 800, "yes", "yes", "no"
+Marks left every: 1, pitchVal, "yes", "yes", "no"
 Text left: "yes", "Pitch (Hz)"
 Text right: "yes", "Frequency (Hz)"
 
